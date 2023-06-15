@@ -1,0 +1,44 @@
+.heros-img {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    height: 60vh;
+    position: relative;
+  }
+  
+  .heros-img::before {
+    content: "";
+    background: url("../assets/path_to_your_image.jpg");
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .headings {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .heros-img h1 {
+    font-size: 2.4rem;
+  }
+  
+  .heros-img p {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .heros-img h1 {
+      font-size: 2rem;
+    }
+  }
+  

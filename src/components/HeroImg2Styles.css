@@ -1,0 +1,44 @@
+.hero-img{
+    width: 100;
+    background: rgba(0, 0, 0, 0.5);
+    height: 60vh;
+    position: relative;
+}
+
+.hero-img::before {
+    content: "" ;
+    background: url("https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2016/10/camera-photo-lens-stock-images.jpg?q=50&fit=contain&w=943&h=&dpr=1.5");
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.heading{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img h1{
+    font-size: 2.4rem;
+}
+
+.hero-img p {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+    .hero-img h1 {
+        font-size: 2rem;
+    }
+
+}
